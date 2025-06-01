@@ -28,6 +28,7 @@
    
    cd docApp
 2. Создайте файл .env в корневой директории:
+  ```bash
   POSTGRES_USER=admin
   POSTGRES_PASSWORD=password
   POSTGRES_DB=doctor_appointments
@@ -39,10 +40,11 @@
   DATA_SERVICE_URL=http://data-service:5001
   DATA_SERVICE_TIMEOUT=5
 3. Запустите систему:
+    ```bash
     docker compose up --build
 
 4. Готово! Сервисы будут доступны по адресам:
-API Service: http://localhost:5000
+API Service:http://localhost:5000
 Data Service: http://localhost:5001
 PostgreSQL: доступен внутри сети (user: admin, pass: password, db: doctor_appointments)
 

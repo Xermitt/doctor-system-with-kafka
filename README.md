@@ -24,9 +24,9 @@
 
 1. Клонируйте репозиторий и перейдите в корневую директорию проекта:
    ```bash
-   git clone https://github.com/[your-username]/doctor-appointment-system.git
+   git clone https://github.com/Xermitt/doctor-system-with-kafka.git
    
-   cd doctor-appointment-system
+   cd docApp
 2. Создайте файл .env в корневой директории:
   POSTGRES_USER=admin
   POSTGRES_PASSWORD=password

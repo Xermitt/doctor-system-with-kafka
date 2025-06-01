@@ -39,9 +39,11 @@
   KAFKA_RETRY_DELAY=5
   DATA_SERVICE_URL=http://data-service:5001
   DATA_SERVICE_TIMEOUT=5
+  ```
 3. Запустите систему:
+    ```bash
     docker compose up --build
-
+    ```
 4. Готово! Сервисы будут доступны по адресам:
 API Service:http://localhost:5000
 Data Service: http://localhost:5001
@@ -49,6 +51,7 @@ PostgreSQL: доступен внутри сети (user: admin, pass: password,
 
 Примеры запросов
 Добавить запись (POST)
+```http
 POST http://localhost:5000/api/appointment
 Content-Type: application/json
     {
@@ -56,19 +59,23 @@ Content-Type: application/json
       "doctor_name": "Доктор Смирнов",
       "appointment_date": "2025-06-01"
     }
+```
 
-
+```http
 Получить записи (GET)
 GET http://localhost:5000/api/search?patient_name=Иван
+```
 
-
+```http
 Топ-10 популярных врачей
 GET http://localhost:5000/api/report/top-doctors
+```
 
-
-
+```http
 Записи по дням
 GET http://localhost:5000/api/report/appointments-per-day
+```
+
 
 Стек технологий
 Python 3.9 + Flask

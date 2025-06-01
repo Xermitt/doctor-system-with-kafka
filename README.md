@@ -40,7 +40,6 @@
   DATA_SERVICE_URL=http://data-service:5001
   DATA_SERVICE_TIMEOUT=5
 3. Запустите систему:
-    ```bash
     docker compose up --build
 
 4. Готово! Сервисы будут доступны по адресам:
